@@ -1,0 +1,246 @@
+header {
+  grid-area: header;
+  width: 100%;
+}
+
+/* encabezado "bienvenidos" */
+header h4 {
+  color: white;
+  background-color: black;
+  padding: 30px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo cosmos banner */
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* buscador */
+.buscar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* color letras nav */
+.nav-link {
+  color: black;
+}
+
+/* hover botones registro e inicio sesion*/
+.nav-link:hover {
+  color: black;
+  background-color: pink;
+}
+
+
+/* barra de nav */
+#nav1 {
+  grid-area: nav;
+  background-color: pink;
+  font-size: 1.5rem;
+  padding: 15px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* SECTION GENERAL */
+section {
+  grid-area: section;
+  padding: 100px;
+  width: 100%;
+}
+/* titulo productos destacados */
+section h3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+/* ESTILO PRODUCTOS INDEX.HTML y PRODUCTOS.HTML */
+#productosIndex {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+/* Tamaño imagen index.html y productos.html */
+section main article img {
+  height: 400px;
+  width: 400px;
+}
+
+/*Estilo Caja productos index.html y productos.html*/
+#productosIndex article {
+  background-color: pink;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/*titulo de fotos*/
+#productosIndex p {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+/*duracion animaciones*/
+#productosIndex article {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+/*boton "ver más"*/
+.boton {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+/*boton "enviar" registro.html*/
+.Registro button {
+  margin-top: 20px;
+}
+/*titulo registro e inicio sesion*/
+.Registro h4 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+/*tamaño de barras para escribir*/
+.tamanoInicioSesion {
+  width: 500px;
+}
+
+
+/* TABLET 
+@media screen and (min-width:750px) and (max-width:950px) {
+
+    .productos, #productos2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+*/
+/*Footer general*/
+footer {
+  grid-area: footer;
+  background-color: pink;
+  padding: 100px;
+  width: 100%;
+  z-index: 1;
+}
+footer img {
+  height: 30px;
+  width: 35px;
+}
+/*footer grid*/
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+/*footer estilos*/
+.hijoFooter a {
+  color: black;
+  margin: 10px 10px 10px 0px;
+}
+
+.hijoFooter a:hover {
+  color: white;
+}
+
+/* Estilos Generales */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Logo wsp*/
+#logowsp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+
+.tituloSecciones {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.Registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  font-size: 16.6666666667px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+/* CELULAR */
+@media screen and (max-width:850px) {
+
+  #productosIndex {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    /* Tamaño imagen index.html y productos.html */
+section main article img {
+  height: 300px;
+  width: 300px;
+}
+
+.tamanoInicioSesion {
+  width: 200px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+
+}
+
+/* COMPUTADORA */
+@media screen and (min-width: 850px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "nav" "section" "footer";
+    gap: 10px;
+  }
+}
